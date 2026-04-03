@@ -162,8 +162,8 @@ const translations = {
       items: [
         {
           images: [
-            "causes_image1.png",
-            "causes_image2.png"
+            "causes_portada.png",
+            "causes_image.png"
           ],
           title: "Causes For Good",
           imagePosition: "left",
@@ -178,8 +178,10 @@ const translations = {
         },
         {
           images: [
-            "companions_image1.png",
-            "companions_image2.png"
+            "companions_portada.png",
+            "companion_1.png",
+            "companion_2.png",
+            "companion_3.png"
           ],
           title: "Companions For Good",
           imagePosition: "55% 100%",
