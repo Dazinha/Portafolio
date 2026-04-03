@@ -102,7 +102,7 @@ const Stack = () => {
 
           {/* Columna Derecha: Stack Tecnológico */}
           <motion.div
-            className="lg:col-span-12 lg:col-start-12"
+            className="mt-20 lg:mt-0 lg:col-span-12 lg:col-start-12"
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-75px" }}
