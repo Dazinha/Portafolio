@@ -36,14 +36,9 @@ const Hero = () => {
             <span className="block font-body text-sm md:text-base font-medium text-slate-400 uppercase tracking-[0.2em] mb-3">
               {t.hero.greeting}
             </span>
-            {/* Texto un pelo más compacto en desktop para balancear el layout */}
-            <span className="block font-bold text-5xl md:text-7xl lg:text-[4.5rem] xl:text-[5.5rem] leading-tight lg:leading-none tracking-tight pb-2">
+            <span className="block font-bold text-5xl md:text-7xl lg:text-[4.5rem] xl:text-[5.5rem] leading-[1.1] lg:leading-none tracking-tight pb-2">
               <span className="text-indigo-400 block">Pablo</span>
-              <span className="text-cyan-400">
-                <span className="block lg:inline">Daza</span>
-                <span className="hidden lg:inline"> </span>
-                <span className="block lg:inline">Garrido</span>
-              </span>
+              <span className="text-cyan-400 block pb-1 lg:pb-0">Daza Garrido</span>
             </span>
           </motion.h1>
 
