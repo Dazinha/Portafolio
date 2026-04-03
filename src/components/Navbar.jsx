@@ -38,7 +38,7 @@ const Navbar = () => {
       className="fixed top-0 left-0 right-0 z-50 bg-slate-950/60 backdrop-blur-xl border-b border-slate-800"
     >
       <div className="max-w-6xl mx-auto px-6 py-4">
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-between relative">
           <a
             href="#"
             className="flex items-center group transition-transform hover:scale-105"
@@ -48,7 +48,7 @@ const Navbar = () => {
             </span>
           </a>
 
-          <ul className="hidden md:flex items-center gap-8">
+          <ul className="hidden md:flex absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 items-center gap-8">
             <li>
               <a
                 href="#stack"
