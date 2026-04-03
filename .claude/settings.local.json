@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mv temp-portfolio/* .)",
+      "Bash(mv temp-portfolio/.* .)",
+      "Bash(rmdir temp-portfolio:*)",
+      "Bash(npm install:*)",
+      "Bash(pkill -f \"vite\")",
+      "Bash(npm run:*)"
+    ]
+  }
+}
