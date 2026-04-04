@@ -45,7 +45,7 @@ const translations = {
     projects: {
       titlePrefix: 'Mis ',
       titleHighlight: 'Proyectos',
-      description: 'Una selección de modelos y sistemas, tanto académicos como profesionales, que reflejan mi aprendizaje universitario y experiencia práctica.',
+      description: 'Una selección de proyectos donde aplico desarrollo Full Stack e Inteligencia Artificial para transformar ideas complejas en soluciones digitales escalables.',
       filters: ['Todos', 'Fullstack', 'Backend', 'Data/ML'],
       achievementPrefix: 'Logro',
       visitPage: 'Visita la página',
@@ -155,7 +155,7 @@ const translations = {
     projects: {
       titlePrefix: 'My ',
       titleHighlight: 'Projects',
-      description: 'A selection of models and systems, both academic and professional, that reflect my university learning and practical experience.',
+      description: 'A selection of projects where I apply Full Stack development and Artificial Intelligence to transform complex ideas into scalable digital solutions.',
       filters: ['All', 'Fullstack', 'Backend', 'Data/ML'], // maps to Todos, Fullstack, Backend, Data/ML
       achievementPrefix: 'Achievement',
       visitPage: 'Visit Website',
