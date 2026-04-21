@@ -102,7 +102,7 @@ const Hero = () => {
               </motion.div>
               {/* CSS (9 o'clock) */}
               <motion.div className="absolute top-1/2 left-0 -translate-x-1/2 -translate-y-1/2 p-2 lg:p-3 bg-slate-900 border border-slate-700 rounded-xl shadow-xl flex items-center justify-center" animate={{ rotate: -360 }} transition={{ duration: 35, repeat: Infinity, ease: "linear" }}>
-                 <img src="https://cdn.simpleicons.org/css3/1572B6" alt="CSS" className="w-5 h-5 lg:w-6 lg:h-6" />
+                 <img src="https://cdn.simpleicons.org/css/1572B6" alt="CSS" className="w-5 h-5 lg:w-6 lg:h-6" />
               </motion.div>
            </motion.div>
 
