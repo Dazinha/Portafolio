@@ -172,21 +172,44 @@ const ProjectCard = ({ project, index, itemVariants, t }) => {
             onClick={() => setIsFullScreen(false)}
           >
             <button
-              className="absolute top-6 right-6 text-slate-400 hover:text-white bg-slate-800/50 hover:bg-slate-700/50 rounded-full p-2 transition-colors z-50"
+              className="absolute top-6 right-6 text-slate-400 hover:text-white bg-slate-800/50 hover:bg-slate-700/50 rounded-full p-2 transition-colors z-[110]"
               onClick={() => setIsFullScreen(false)}
             >
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
             </button>
-            <motion.img
-              initial={{ scale: 0.95, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              exit={{ scale: 0.95, opacity: 0 }}
-              transition={{ type: "spring", damping: 25, stiffness: 300 }}
-              src={images[imgIndex]}
-              alt={project.title}
-              className="max-w-full max-h-[90vh] object-contain rounded-xl shadow-2xl shadow-indigo-500/20 border border-slate-800"
-              onClick={(e) => e.stopPropagation()}
-            />
+
+            {images.length > 1 && (
+              <>
+                <button
+                  onClick={prevImg}
+                  className="absolute left-4 sm:left-10 top-1/2 -translate-y-1/2 bg-slate-800/50 hover:bg-indigo-500 border border-white/10 text-white rounded-full p-3 transition-all duration-300 z-[110] backdrop-blur-sm shadow-lg hover:shadow-indigo-500/40 hover:scale-110"
+                  aria-label="Previous image"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="m15 18-6-6 6-6" /></svg>
+                </button>
+                <button
+                  onClick={nextImg}
+                  className="absolute right-4 sm:right-10 top-1/2 -translate-y-1/2 bg-slate-800/50 hover:bg-indigo-500 border border-white/10 text-white rounded-full p-3 transition-all duration-300 z-[110] backdrop-blur-sm shadow-lg hover:shadow-indigo-500/40 hover:scale-110"
+                  aria-label="Next image"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="m9 18 6-6-6-6" /></svg>
+                </button>
+              </>
+            )}
+
+            <AnimatePresence mode="wait">
+              <motion.img
+                key={imgIndex}
+                initial={{ scale: 0.95, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
+                exit={{ scale: 0.95, opacity: 0 }}
+                transition={{ type: "spring", damping: 25, stiffness: 300 }}
+                src={images[imgIndex]}
+                alt={`${project.title} - imagen ${imgIndex + 1}`}
+                className="max-w-full max-h-[90vh] object-contain rounded-xl shadow-2xl shadow-indigo-500/20 border border-slate-800 relative z-[105]"
+                onClick={(e) => e.stopPropagation()}
+              />
+            </AnimatePresence>
           </motion.div>
         )}
       </AnimatePresence>

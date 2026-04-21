@@ -90,19 +90,19 @@ const Hero = () => {
            >
               {/* React (12 o'clock) */}
               <motion.div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 p-2 lg:p-3 bg-slate-900 border border-slate-700 rounded-xl shadow-xl flex items-center justify-center" animate={{ rotate: -360 }} transition={{ duration: 35, repeat: Infinity, ease: "linear" }}>
-                 <span className="text-cyan-400 font-bold font-mono text-xs lg:text-sm">React</span>
+                 <img src="https://cdn.simpleicons.org/react/61DAFB" alt="React" className="w-5 h-5 lg:w-6 lg:h-6" />
               </motion.div>
               {/* JS (3 o'clock) */}
               <motion.div className="absolute top-1/2 right-0 translate-x-1/2 -translate-y-1/2 p-2 lg:p-3 bg-slate-900 border border-slate-700 rounded-xl shadow-xl flex items-center justify-center" animate={{ rotate: -360 }} transition={{ duration: 35, repeat: Infinity, ease: "linear" }}>
-                 <span className="text-yellow-400 font-bold font-mono text-xs lg:text-sm">JS</span>
+                 <img src="https://cdn.simpleicons.org/javascript/F7DF1E" alt="JavaScript" className="w-5 h-5 lg:w-6 lg:h-6" />
               </motion.div>
               {/* Node (6 o'clock) */}
               <motion.div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 p-2 lg:p-3 bg-slate-900 border border-slate-700 rounded-xl shadow-xl flex items-center justify-center" animate={{ rotate: -360 }} transition={{ duration: 35, repeat: Infinity, ease: "linear" }}>
-                 <span className="text-green-400 font-bold font-mono text-xs lg:text-sm">Node</span>
+                 <img src="https://cdn.simpleicons.org/nodedotjs/339933" alt="Node.js" className="w-5 h-5 lg:w-6 lg:h-6" />
               </motion.div>
               {/* CSS (9 o'clock) */}
               <motion.div className="absolute top-1/2 left-0 -translate-x-1/2 -translate-y-1/2 p-2 lg:p-3 bg-slate-900 border border-slate-700 rounded-xl shadow-xl flex items-center justify-center" animate={{ rotate: -360 }} transition={{ duration: 35, repeat: Infinity, ease: "linear" }}>
-                 <span className="text-indigo-400 font-bold font-mono text-xs lg:text-sm">CSS</span>
+                 <img src="https://cdn.simpleicons.org/css3/1572B6" alt="CSS" className="w-5 h-5 lg:w-6 lg:h-6" />
               </motion.div>
            </motion.div>
 
@@ -115,11 +115,11 @@ const Hero = () => {
            >
               {/* HTML (Matemáticamente a los 45 grados arriba/derecha) */}
               <motion.div className="absolute top-[14.6%] right-[14.6%] translate-x-1/2 -translate-y-1/2 p-1.5 lg:p-2 bg-slate-900 border border-slate-700 rounded-full shadow-xl flex items-center justify-center" animate={{ rotate: 360 }} transition={{ duration: 50, repeat: Infinity, ease: "linear" }}>
-                 <span className="text-orange-400 font-bold font-mono text-[10px] lg:text-xs">HTML</span>
+                 <img src="https://cdn.simpleicons.org/html5/E34F26" alt="HTML" className="w-4 h-4 lg:w-5 lg:h-5" />
               </motion.div>
               {/* Tailwind (Matemáticamente a los 225 grados abajo/izquierda) */}
               <motion.div className="absolute bottom-[14.6%] left-[14.6%] -translate-x-1/2 translate-y-1/2 p-1.5 lg:p-2 bg-slate-900 border border-slate-700 rounded-full shadow-xl flex items-center justify-center" animate={{ rotate: 360 }} transition={{ duration: 50, repeat: Infinity, ease: "linear" }}>
-                 <span className="text-cyan-300 font-bold font-mono text-[10px] lg:text-xs">TW</span>
+                 <img src="https://cdn.simpleicons.org/tailwindcss/06B6D4" alt="Tailwind CSS" className="w-4 h-4 lg:w-5 lg:h-5" />
               </motion.div>
            </motion.div>
         </motion.div>
